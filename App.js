@@ -6,13 +6,12 @@ import config from './aws-exports'
 Amplify.configure(config)
 
 import { withAuthenticator } from 'aws-amplify-react-native'
+import Router from './src/Router/Router';
 
 
 const App = () => {
   return (
-    <View>
-      <Text>Testing APP</Text>
-    </View>
+    <Router/>
   )
 }
 
